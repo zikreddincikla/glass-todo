@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(Resimler/gunbatimi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 80px auto 70px;
+    grid-template-areas: "header" "main" "footer";
+    font-family: sans-serif;
+}
+header#main-header{
+    grid-area: header;
+    width: 100%;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+    border-style: none solid solid solid;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.nav-item{
+    font-size: 25px;
+    list-style: none;
+}
+footer#main-footer{
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+ul#nav-list{
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 25px;
+}
+a:hover, .action-btn:hover{
+    background: radial-gradient(circle ,rgb(255, 209, 124),orange);
+}
+
+main#main-content{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+    grid-template-areas: "sidebar todo history";
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.action-btn{
+    height: 70px;
+    width: 150px;
+    border-radius: 25px;
+    color: white;
+    background-color: orange;
+    border-style: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#todo-container {
+    grid-area: todo;
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+#todo-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 10px;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#todo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#todo-form-wrapper h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+input#todo-input{
+    outline: none;
+    border-style: none;
+    width: 250px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 15px;
+}
+#todo-form button{
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    width: 50px;
+    font-size: medium;
+    background-color: rgb(70, 70, 255);
+    color: white;
+    cursor: pointer;
+}
+#todo-form button:hover{
+    background-color: rgb(26, 26, 255);
+}
+#todo-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 10px;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-height: 350px;
+    overflow-y: auto;
+}
+#history-sidebar{
+    grid-area: history;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#history-empty-warning, #empty-list-warning{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    width: 100%;
+}
+#history-sidebar p{
+    text-align: center;
+}
+#todo-list-wrapper p{
+    text-align: center;
+    font-size: larger;
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 7px;
+    border-radius: 15px;
+    border-style: solid;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.todo-item-delete{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 83, 83);
+    border-style: none;
+    border-radius: 10px;
+}
+.todo-item-delete:hover{
+    background-color: red;
+}
+.todo-item-check{
+    padding: 10px;
+    background-color: rgb(88, 252, 88);
+    border-style: none;
+    border-radius: 10px;
+}
+.todo-item-check:hover{
+    background-color: green;
+}
+.check{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: green;
+}
+ul#nav-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+}
+#history-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1080px) {
+    main#main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "sidebar history" 
+            "todo todo";
+        gap: 20px;
+    }
+    #sidebar { grid-area: sidebar; }
+    #history-sidebar { grid-area: history; }
+    #todo-container { grid-area: todo; }
+    #todo-form-wrapper, #todo-list-wrapper {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+#history-list-wrapper {
+    overflow-y: auto;
+    max-height: 300px;
+    width: 100%;
+}

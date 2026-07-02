@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Projesi</title>
+    <meta name="author" content="Zikreddin">
+    <meta name="keywords" content="To-Do, Html, Css, Js">
+    <meta name="description" content="Html, Css ve Js teknolojileri kullanılarak yapılmış To-Do Projesidir">
+    
+    <link rel="icon" href="Resimler/icon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav id="navbar">
+            <h2 id="logo-text">Zikreddin</h2> 
+            <ul id="nav-list">
+                <li class="nav-item"><a href="https://github.com/zikreddincikla" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <aside id="sidebar">
+            <h2>Kısayollar</h2>
+            <button class="action-btn" id="btn-clear-all">Hepsini Temizle</button>
+            <button class="action-btn" id="btn-check-all">Hepsini İşaretle</button>
+            <button class="action-btn" id="btn-uncheck-all">Bütün İşaretleri Geri Al</button>
+        </aside>
+
+        <article id="todo-container">
+            <div id="todo-form-wrapper">
+                <h2>To-Do Listesi</h2>
+                <div id="todo-form">
+                    <input type="text" id="todo-input" maxlength="30" placeholder="Bir görev yazın...">
+                    <button id="btn-add-todo">Ekle</button>
+                </div>
+            </div>
+            <div id="todo-list-wrapper">
+                <ul id="todo-list">
+                    </ul>
+                <p id="empty-list-warning">Burası boş... Bir şeyler eklemek ister misin?</p>
+            </div>
+        </article>
+
+        <aside id="history-sidebar">
+            <h2>Geçmişin</h2>
+            <div id="history-list-wrapper">
+                <ul id="history-list">
+                    </ul>
+                <p id="history-empty-warning">Burası boş... Yeni misin?</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 Zikreddin | Tüm haklara sahiptir</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
