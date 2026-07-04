@@ -16,11 +16,11 @@ A browser-based to-do list application developed using HTML, CSS, and JavaScript
 
 ## Technologies Used
 
-|**HTML5:**|Used to create the page structure in accordance with semantic rules.|
-|-|-|
-|**CSS3:**|Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed.|
-|-|-|
-|**JavaScript:**|Handled dynamic element management, event listeners, and the control of LocalStorage processes.|
+| Teknoloji | Açıklama |
+| :--- | :--- |
+| **HTML5:** | Used to create the page structure in accordance with semantic rules. |
+| **CSS3:** | Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed. |
+| **JavaScript:** | Handled dynamic element management, event listeners, and the control of LocalStorage processes. |
 
 ---
 
