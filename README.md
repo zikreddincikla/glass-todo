@@ -1,16 +1,28 @@
 # Todo-Web
 
-A browser-based to-do list application developed using HTML, CSS, and JavaScript technologies. It is designed in compliance with modern web standards to help users organize their daily tasks.
+<p align="center">
+  <img src="https://img.shields.io/github/stars/zikreddincikla/Todo-Web?style=for-the-badge&color=blue" alt="Stars">
+  <img src="https://img.shields.io/github/forks/zikreddincikla/Todo-Web?style=for-the-badge&color=purple" alt="Forks">
+  <img src="https://img.shields.io/github/license/zikreddincikla/Todo-Web?style=for-the-badge&color=green" alt="License">
+</p>
+
+<p align="center">
+  <b>A modern, browser-based to-do list application developed to help users organize their daily tasks effortlessly.</b>
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Bnd2Ezc3B5d2F6c3B5d2F6/l3q2JnuGqWgpZfv9e/giphy.gif" alt="Todo App Demo" width="500">
+</p>
 
 ---
 
 ## Key Features
 
-* **Task Management:** You can add new tasks, mark completed items, or remove them from the list.
-* **Bulk Actions:** It is possible to clear the entire list, mark all tasks as completed, or unmark them all simultaneously with a single action.
-* **History Panel:** A general overview of the added tasks can be tracked from the history section located on the side.
-* **Local Storage:** Thanks to LocalStorage integration, your data is securely saved in the browser's memory even if the page is closed or refreshed.
-* **Responsive Interface:** Due to its flexible design layouts, the application displays seamlessly on mobile, tablet, and desktop devices.
+* **Task Management:** Add new tasks, mark completed items, or remove them instantly.
+* **Bulk Actions:** Clear the entire list, mark all tasks as completed, or unmark them all simultaneously with a single click.
+* **History Panel:** Track a general overview of your past and added tasks easily from the sidebar.
+* **Local Storage:** Thanks to LocalStorage integration, your data is securely saved in the browser's memory—never lose your tasks even if you close or refresh the page.
+* **Responsive Interface:** Designed with fluid layouts to display seamlessly on mobile, tablet, and desktop devices.
 
 ---
 
@@ -18,19 +30,19 @@ A browser-based to-do list application developed using HTML, CSS, and JavaScript
 
 | Technology | Description |
 | :--- | :--- |
-| **HTML5:** | Used to create the page structure in accordance with semantic rules. |
-| **CSS3:** | Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed. |
-| **JavaScript:** | Handled dynamic element management, event listeners, and the control of LocalStorage processes. |
+| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Used to create the page structure in accordance with semantic rules. |
+| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed. |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Handled dynamic element management, event listeners, and the control of LocalStorage processes. |
 
 ---
 
-## Installation and Execution
+## Installation & Execution
 
-1. Download or clone the project files to your computer.
-2. You can run the application directly in any modern browser by double-clicking the `index.html` file located in the main directory.
+Follow these simple steps to get the project running locally:
 
----
+<details>
+<summary><b>Click to expand installation guide</b></summary>
 
-## Developer
-
-* Zikreddin - [GitHub Profile Page](https://github.com/zikreddincikla)
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/zikreddincikla/Todo-Web.git](https://github.com/zikreddincikla/Todo-Web.git)
