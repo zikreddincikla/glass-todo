@@ -1,48 +1,114 @@
-# Todo-Web
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/zikreddincikla/Todo-Web?style=for-the-badge&color=blue" alt="Stars">
-  <img src="https://img.shields.io/github/forks/zikreddincikla/Todo-Web?style=for-the-badge&color=purple" alt="Forks">
-  <img src="https://img.shields.io/github/license/zikreddincikla/Todo-Web?style=for-the-badge&color=green" alt="License">
-</p>
+# 📝 To-Do Project
 
-<p align="center">
-  <b>A modern, browser-based to-do list application developed to help users organize their daily tasks effortlessly.</b>
-</p>
+**A clean, glassmorphism-styled to-do list built with vanilla HTML, CSS and JavaScript — no frameworks, no dependencies, no build step.**
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Bnd2Ezc3B5d2F6c3B5d2F6/l3q2JnuGqWgpZfv9e/giphy.gif" alt="Todo App Demo" width="500">
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![No Dependencies](https://img.shields.io/badge/dependencies-none-success?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
----
+[Live Demo](#) · [Report a Bug](https://github.com/zikreddincikla) · [Author](https://github.com/zikreddincikla)
 
-## Key Features
-
-* **Task Management:** Add new tasks, mark completed items, or remove them instantly.
-* **Bulk Actions:** Clear the entire list, mark all tasks as completed, or unmark them all simultaneously with a single click.
-* **History Panel:** Track a general overview of your past and added tasks easily from the sidebar.
-* **Local Storage:** Thanks to LocalStorage integration, your data is securely saved in the browser's memory—never lose your tasks even if you close or refresh the page.
-* **Responsive Interface:** Designed with fluid layouts to display seamlessly on mobile, tablet, and desktop devices.
+</div>
 
 ---
 
-## Technologies Used
+## Overview
 
-| Technology | Description |
-| :--- | :--- |
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Used to create the page structure in accordance with semantic rules. |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed. |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Handled dynamic element management, event listeners, and the control of LocalStorage processes. |
+To-Do Project is a lightweight task manager that runs entirely in the browser. Every task is written straight to `localStorage`, so your list survives page refreshes and browser restarts — without a backend, a database, or a single `npm install`.
 
----
+It's built as a demonstration of solid fundamentals: semantic HTML, CSS Grid/Flexbox layout, `backdrop-filter` glass effects, and framework-free DOM manipulation.
 
-## Installation & Execution
+> [!TIP]
+> Because there's zero build tooling, you can literally double-click `index.html` and the app just works. That's the whole setup process.
 
-Follow these simple steps to get the project running locally:
+## Features
+
+- ✅ **Add tasks** — via button click or `Enter` key
+- ✅ **Complete tasks** — one click toggles a task's completed state
+- 🗑️ **Delete tasks** — remove individual items instantly
+- 📦 **Bulk actions** — Check All, Uncheck All, and Clear All from the sidebar
+- 💾 **Persistent storage** — tasks are saved to `localStorage`, so they're still there when you come back
+- 🕒 **History panel** — a running record of tasks from your session
+- 📱 **Responsive layout** — reflows from a 3-column desktop grid into a stacked mobile view below `1080px`
+- 🪟 **Glassmorphism UI** — frosted-glass panels via `backdrop-filter: blur()`
+- 🔍 **SEO-ready** — Open Graph and Twitter Card meta tags are already wired up for link previews
+
+## Tech stack
+
+| Layer | Technology | Notes |
+|---|---|---|
+| Structure | HTML5 | Semantic tags (`<header>`, `<main>`, `<aside>`, `<article>`, `<footer>`) |
+| Styling | CSS3 | CSS Grid + Flexbox, `backdrop-filter`, responsive media queries |
+| Behavior | Vanilla JavaScript (ES6) | DOM API, event listeners, `localStorage` |
+| Build tools | None | Zero dependencies, zero config |
+
+## Getting started
+
+No installation required — this project has no dependencies to install.
+
+```bash
+git clone https://github.com/zikreddincikla/to-do-project.git
+cd to-do-project
+```
+
+Then simply open `index.html` in your browser. For live-reload during development, you can optionally serve it with any static server:
+
+```bash
+npx serve .
+```
 
 <details>
-<summary><b>Click to expand installation guide</b></summary>
+<summary><b>📁 Project structure</b></summary>
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/zikreddincikla/Todo-Web.git](https://github.com/zikreddincikla/Todo-Web.git)
+```
+to-do-project/
+├── index.html      # Markup and page structure
+├── style.css       # Layout, theming, glassmorphism effects
+├── app.js          # To-do logic, localStorage sync, event handling
+└── Pictures/
+    ├── Sunset.png  # Background + social preview image
+    └── icon.ico    # Favicon
+```
+
+</details>
+
+<details>
+<summary><b>🧠 How persistence works</b></summary>
+
+Every add, check, or delete action calls `save_todo()`, which serializes the current list into a plain array of `{ text, completed }` objects and writes it to `localStorage` under the `todos` key[^1]. On page load, `load_todo()` reads that array back and rebuilds the DOM from it — so the interface is always a direct reflection of what's in storage, not the other way around.
+
+[^1]: This means clearing your browser's site data will also clear your to-do list — there's currently no cloud sync or export option.
+
+</details>
+
+## Roadmap
+
+- [x] Core CRUD actions (add, check, delete)
+- [x] Persistent storage with `localStorage`
+- [x] Responsive layout
+- [ ] Inline task editing
+- [ ] Drag-and-drop reordering
+- [ ] Dark mode toggle
+- [ ] Due dates / reminders
+
+## Author
+
+Built and maintained by **Zikreddin**.
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/zikreddincikla)
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for details.
+
+---
+
+<div align="center">
+
+© 2026 Zikreddin — All rights reserved.
+
+</div>
