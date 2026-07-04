@@ -1,34 +1,34 @@
 # Todo-Web
 
-HTML, CSS ve JavaScript teknolojileri kullanılarak geliştirilmiş, tarayıcı tabanlı bir yapılacaklar listesi uygulamasıdır. Kullanıcıların günlük görevlerini organize etmelerine yardımcı olmak amacıyla modern web standartlarına uygun olarak tasarlanmıştır.
+A browser-based to-do list application developed using HTML, CSS, and JavaScript technologies. It is designed in compliance with modern web standards to help users organize their daily tasks.
 
 ---
 
-## Öne Çıkan Özellikler
+## Key Features
 
-* Görev Yönetimi: Yeni görevler ekleyebilir, tamamlanan maddeleri işaretleyebilir veya listeden kaldırabilirsiniz.
-* Toplu İşlemler: Tek bir hareketle tüm listeyi temizlemek, tüm görevleri tamamlandı olarak işaretlemek ya da işaretleri topluca geri almak mümkündür.
-* Geçmiş Paneli: Eklenen görevlerin genel dökümü yan tarafta bulunan geçmiş alanından takip edilebilir.
-* Yerel Depolama: LocalStorage entegrasyonu sayesinde sayfa kapatılsa veya yenilense bile verileriniz tarayıcı hafızasında güvenle saklanır.
-* Duyarlı Arayüz: Esnek tasarım hatları sayesinde uygulama mobil, tablet ve masaüstü cihazlarda sorunsuz bir şekilde görüntülenir.
-
----
-
-## Kullanılan Teknolojiler
-
-* HTML5: Sayfa yapısının semantik kurallara uygun şekilde oluşturulması için kullanıldı.
-* CSS3: Grid ve Flexbox modelleriyle birlikte, arka plandaki görselle uyumlu buzlu cam efekti içeren bir arayüz tasarlandı.
-* JavaScript: Dinamik element yönetimi, olay yakalayıcılar ve LocalStorage süreçlerinin kontrolü sağlandı.
+* **Task Management:** You can add new tasks, mark completed items, or remove them from the list.
+* **Bulk Actions:** It is possible to clear the entire list, mark all tasks as completed, or unmark them all simultaneously with a single action.
+* **History Panel:** A general overview of the added tasks can be tracked from the history section located on the side.
+* **Local Storage:** Thanks to LocalStorage integration, your data is securely saved in the browser's memory even if the page is closed or refreshed.
+* **Responsive Interface:** Due to its flexible design layouts, the application displays seamlessly on mobile, tablet, and desktop devices.
 
 ---
 
-## Kurulum ve Çalıştırma
+## Technologies Used
 
-1. Proje dosyalarını bilgisayarınıza indirin veya klonlayın.
-2. Ana dizinde yer alan index.html dosyasına çift tıklayarak uygulamayı herhangi bir modern tarayıcıda doğrudan çalıştırabilirsiniz.
+* **HTML5:** Used to create the page structure in accordance with semantic rules.
+* **CSS3:** Along with Grid and Flexbox models, an interface featuring a frosted glass effect compatible with the background image was designed.
+* **JavaScript:** Handled dynamic element management, event listeners, and the control of LocalStorage processes.
 
 ---
 
-## Geliştirici
+## Installation and Execution
 
-* Zikreddin - [GitHub Profil Sayfası](https://github.com/zikreddincikla)
+1. Download or clone the project files to your computer.
+2. You can run the application directly in any modern browser by double-clicking the `index.html` file located in the main directory.
+
+---
+
+## Developer
+
+* Zikreddin - [GitHub Profile Page](https://github.com/zikreddincikla)
