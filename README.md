@@ -85,16 +85,6 @@ Every add, check, or delete action calls `save_todo()`, which serializes the cur
 
 </details>
 
-## Roadmap
-
-- [x] Core CRUD actions (add, check, delete)
-- [x] Persistent storage with `localStorage`
-- [x] Responsive layout
-- [ ] Inline task editing
-- [ ] Drag-and-drop reordering
-- [ ] Dark mode toggle
-- [ ] Due dates / reminders
-
 ## Author
 
 Built and maintained by **Zikreddin**.
