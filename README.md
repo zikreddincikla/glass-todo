@@ -10,7 +10,7 @@
 ![No Dependencies](https://img.shields.io/badge/dependencies-none-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
 
-[Report a Bug](https://github.com/zikreddincikla) · [Author](https://github.com/zikreddincikla)
+[Live Demo](https://zikreddincikla.github.io/Todo-Web/)· [Report a Bug](https://github.com/zikreddincikla) · [Author](https://github.com/zikreddincikla)
 
 </div>
  
