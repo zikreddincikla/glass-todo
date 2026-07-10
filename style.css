@@ -36,6 +36,7 @@ header#main-header{
 .nav-item{
     font-size: 25px;
     list-style: none;
+    
 }
 footer#main-footer{
     display: flex;
