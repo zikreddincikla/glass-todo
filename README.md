@@ -51,7 +51,7 @@ It's built as a demonstration of solid fundamentals: semantic HTML, CSS Grid/Fle
 No installation required — this project has no dependencies to install.
 
 ```bash
-git clone https://github.com/zikreddincikla/to-do-project.git
+git clone https://github.com/zikreddincikla/glass-todo.git
 cd to-do-project
 ```
 
