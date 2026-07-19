@@ -12,6 +12,8 @@
 
 [Live Demo](https://zikreddincikla.github.io/glass-todo/) · [Report a Bug](https://github.com/zikreddincikla) · [Author](https://github.com/zikreddincikla)
 
+🇬🇧 English | [🇹🇷 Türkçe](README.tr.md)
+
 </div>
  
 ---
