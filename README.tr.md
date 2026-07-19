@@ -92,6 +92,7 @@ Her ekleme, işaretleme veya silme işlemi `save_todo()` fonksiyonunu çağırı
 **Zikreddin** tarafından geliştirildi ve sürdürülüyor.
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/zikreddincikla)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zikreddin-%C3%A7%C4%B1klasa%C4%9F%C4%B1rc%C4%B1o%C4%9Flu-64667a395/)
 
 ## Lisans
 
