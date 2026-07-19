@@ -56,9 +56,10 @@ a{
     background-color: orange;
     padding: 20px;
     border-radius: 25px;
+    transition: 0.3s ease;
 }
 a:hover, .action-btn:hover{
-    background: radial-gradient(circle ,rgb(255, 209, 124),orange);
+    background-color:rgb(255, 209, 124);
 }
 
 main#main-content{
@@ -94,6 +95,7 @@ main#main-content{
     border-style: none;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 #todo-container {
     grid-area: todo;
@@ -142,6 +144,7 @@ input#todo-input{
     background-color: rgb(70, 70, 255);
     color: white;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 #todo-form button:hover{
     background-color: rgb(26, 26, 255);
@@ -213,6 +216,7 @@ ul{
     background-color: rgb(255, 83, 83);
     border-style: none;
     border-radius: 10px;
+    transition: 0.3s ease;
 }
 .todo-item-delete:hover{
     background-color: red;
@@ -222,6 +226,7 @@ ul{
     background-color: rgb(88, 252, 88);
     border-style: none;
     border-radius: 10px;
+    transition: 0.3s ease;
 }
 .todo-item-check:hover{
     background-color: green;
